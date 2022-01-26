@@ -6,19 +6,20 @@ public class Imc {
 
 	public static void main(String[] args) {
 		
-		// DeclaraÁ„o das vari·veis
+		// Declara√ß√£o das vari√°veis
+		// Adicionei esse comment
 		int pesoDoUsuario;
 		double alturaDoUsuario, imc;
 		String nomeDoUsuario;
 
-		// Ler o teclado do usu·rio
+		// Ler o teclado do usu√°rio
 		Scanner leitor = new Scanner(System.in);
 		
 		System.out.print("Qual o o seu nome? ");
 		nomeDoUsuario = leitor.nextLine();
 						
-		// Criando as vari·veis para o c·lculo
-		System.out.print(nomeDoUsuario + " digite seu peso: "); // ConcatenaÁ„o
+		// Criando as vari√°veis para o c√°lculo
+		System.out.print(nomeDoUsuario + " digite seu peso: "); // Concatena√ß√£o
 		pesoDoUsuario = leitor.nextInt();
 		
 		System.out.print("\nDigite a sua altura: ");
@@ -31,11 +32,11 @@ public class Imc {
 		imc = pesoDoUsuario / (alturaDoUsuario * alturaDoUsuario);
 		
 		//System.out.println("");
-		System.out.println("\n" + nomeDoUsuario + ", seu imc È " + imc + ".");
+		System.out.println("\n" + nomeDoUsuario + ", seu imc √© " + imc + ".");
 		
-		// Determinar a classificaÁ„o do IMC
+		// Determinar a classifica√ß√£o do IMC
 		if (imc < 18.5) {
-			System.out.println("VocÍ est· ABAIXO DO PESO!!");
+			System.out.println("Voc√™ est√° ABAIXO DO PESO!!");
 		} else if (imc >= 18.5 && imc < 25) {
 			System.out.println("PESO NORMAL");
 		} else if(imc >= 25 && imc < 30) {
